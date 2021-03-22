@@ -1,16 +1,15 @@
-#include <bits/stdc++.h>
-
-using namespace std;
+#include <iostream>
 
 int main()
 {
-    int n;
-    cin >> n;
+    std::uint32_t myN;
+    cin >> myN;
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
     
-    vector<string> words = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
+    static constexpr std::array<char*, 9> ] myWords{"one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
 
-    n > 9 ? cout << "Greater than 9" << endl : cout << words[n-1] << endl;
+    if (myN > 9) { cout << "Greater than 9" << endl; }
+    else { cout << myWords[n-1] << endl; }
 
     return 0;
 }
